@@ -1,4 +1,4 @@
-package com.admiral26.weatherdaggerhilt.ui
+package com.admiral26.weatherdaggerhilt.ui.splash
 
 import android.os.Bundle
 import android.view.View
@@ -15,7 +15,9 @@ class Splash : BaseFragment(R.layout.splash) {
     override fun onCreated(view: View, savedInstanceState: Bundle?) {
         lifecycleScope.launch {
             delay(5000)
-            findNavController().navigate(com.admiral26.weatherdaggerhilt.SplashDirections.actionSplashToHomePage())
+            findNavController().navigate(
+                SplashDirections.actionSplashToHomePage()
+            )
         }
     }
 }
