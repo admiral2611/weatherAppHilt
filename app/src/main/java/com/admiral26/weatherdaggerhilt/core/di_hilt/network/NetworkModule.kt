@@ -1,6 +1,7 @@
 package com.admiral26.weatherdaggerhilt.core.di_hilt.network
 
 import android.content.Context
+import com.admiral26.weatherdaggerhilt.util.BASE_URL
 import com.chuckerteam.chucker.api.ChuckerCollector
 import com.chuckerteam.chucker.api.ChuckerInterceptor
 import dagger.Module
@@ -22,7 +23,7 @@ object NetworkModule {
     @[Provides Singleton]
     fun provideRetrofit(okHttpClient: OkHttpClient): Retrofit {
         return Retrofit.Builder()
-            .baseUrl("https://api.weatherapi.com/")
+            .baseUrl(BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .client(okHttpClient)
             .build()

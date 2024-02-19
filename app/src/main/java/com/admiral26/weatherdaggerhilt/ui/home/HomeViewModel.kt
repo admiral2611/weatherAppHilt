@@ -3,8 +3,8 @@ package com.admiral26.weatherdaggerhilt.ui.home
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.admiral26.weatherappmvvm.core.model.CurentWeatherRespons
 import com.admiral26.weatherappmvvm.util.ResultWrapper
+import com.admiral26.weatherdaggerhilt.core.model.current.CurentWeatherRespons
 import com.admiral26.weatherdaggerhilt.core.repository.WeatherRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch

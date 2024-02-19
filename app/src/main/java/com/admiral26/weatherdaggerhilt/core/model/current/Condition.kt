@@ -1,4 +1,4 @@
-package com.admiral26.weatherappmvvm.core.model
+package com.admiral26.weatherdaggerhilt.core.model.current
 
 
 import com.google.gson.annotations.SerializedName

@@ -14,7 +14,7 @@ import kotlinx.coroutines.launch
 class Splash : BaseFragment(R.layout.splash) {
     override fun onCreated(view: View, savedInstanceState: Bundle?) {
         lifecycleScope.launch {
-            delay(5000)
+            delay(4000)
             findNavController().navigate(
                 SplashDirections.actionSplashToHomePage()
             )
